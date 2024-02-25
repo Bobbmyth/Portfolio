@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #5658ef;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            margin: 0 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #412af7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #200080;
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Règles de média query pour la conception responsive */
+        @media only screen and (max-width: 600px) {
+            button {
+                margin: 5px;
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 30px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <button onclick="scrollToSection('presentation')">Présentation</button>
+        <button onclick="scrollToSection('projet')">Projet</button>
+        <button onclick="scrollToSection('vielleTechnologique')">Vielle technologique</button>
+        <button onclick="scrollToSection('cvLinkedIn')">CV et LinkedIn</button>
+    </header>
+
+    <section id="presentation">
+        <h1>Bienvenue!</h1>
+        <p>Je suis Antoine LEGEAY, en deuxième année de BTS SIO option SLAM.</p>
+        <p>Vous trouverez tout sur mes projets et autres.</p>
+    </section>
+
+    <section id="projet">
+        <h2>Projets</h2>
+        <section>
+            <h3>Site e-commerce</h3>
+            <p>Sur le site web, vous trouverez une large gamme de claviers avec des prix variés. De plus, le site
+                comprend les fonctionnalités suivantes :</p>
+                <div style="text-align: left; margin: auto; max-width: 600px;">
+            <ul style="text-align: left; margin-left: auto; margin-right: auto;">
+                <li>Un header commun à tous (PHP)</li>
+                <li>Un header spécifique pour les personnes connectées (PHP)</li>
+                <li>Un système de connexion, prochainement migré vers PDO (PHP)</li>
+                <li>La possibilité de se connecter et se déconnecter en tant que client (PHP)</li>
+                <li>Un carrousel sur la page d'accueil présentant des claviers (PHP)</li>
+                <li>Un panier (PHP)</li>
+                <li>La possibilité de payer (PHP)</li>
+                <li>Vérification de la carte bleue (PHP)</li>
+                <li>Vérification du mot de passe (PHP)</li>
+                <li>Base de données sur Wamp</li>
+                <li>Une page de connexion (PHP)</li>
+                <li>Un footer commun à tous (PHP)</li>
+            </ul>
+        </div>
+        </section>
+
+        <section>
+            <h3>Application SAV</h3>
+            <p>L’application SAV est une application windows form  ayant un lien avec le site d’internet, on y voir la parti adminastateur qui enregistre la plainte d’un client
+                on peut y trouver plusieur interface ainsi quel les ticket tout diriger dans une base de données</p>
+        </section>
+
+        <section>
+            <h3>Pokédex</h3>
+            <p>Le pokédex est fait principalement en JavaScript, elle utilise la pokéapi et permet de voir les 151 premier pokémon dans un pokédex, avec nom, image, type, et autre information du pokémon comme dans un vrai pokédex </p>
+        </section>
+
+            <section>
+                <h3>Regroupement de logs</h3>
+                <p>Le code de ce projet est réalisé en PHP. Il permet de récupérer toutes les logs d'un dossier, en
+                    utilisant principalement les expressions régulières (preg_match) pour identifier des morceaux de log
+                    spécifiques tels que "ERROR", ainsi que les dates et les messages.</p>
+
+                <p>Le processus commence par la lecture du dossier pour parcourir tous les fichiers avec l'extension
+                    ".log". Le chemin vers le dossier est indiqué dans le code. Les dates ont un format variable d'une
+                    application à l'autre, mais le programme les détecte toutes et les modifie pour les normaliser dans
+                    un format commun.</p>
+
+                <p>Les messages de log sont extraits et découpés en parties distinctes. Le type est facilement
+                    identifiable en recherchant les termes "ERROR" ou "UNEXPECTED". L'objectif est de découper chaque
+                    ligne pour éliminer les caractères spéciaux souvent superflus, propres à chaque application, puis de
+                    stocker ces informations dans une base de données.</p>
+            </section>
+    </section>
+
+    <section id="vielleTechnologique">
+
+        <h2>Vielle technologique sur l'Internet des objets</h2>
+        <p>Découvrez ma vielle technologique dans le contexte de l'Internet des objets.</p>
+
+        <button class="btn" onclick="window.open('./IMG/DiapoIoT.2 (2).odp')">
+            Le diaporama
+        </button>
+    </section>
+
+
+    <section id="cvLinkedIn">
+        <p>Découvrez mon profil professionnel et visualisez mon CV ci-dessous :</p>
+
+        <button onclick="goToLinkedIn()">LinkedIn</button>
+
+
+        <button class="btn" onclick="window.open('./IMG/CV Antoine Legeay dec2023.pdf')">
+            Mon CV
+        </button>
+
+
+        <button onclick="goToGitHub()">GitHub</button>
+
+        <script>
+            function goToLinkedIn() {
+                window.location.href = 'https://www.linkedin.com/in/antoine-legeay-441a8522b';
+            }
+
+
+            function goToGitHub() {
+
+                window.location.href = 'https://github.com/Bobbmyth?tab=projects';
+            }
+        </script>
+    </section>
+
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>
