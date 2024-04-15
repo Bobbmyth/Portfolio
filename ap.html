@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Pokédex API</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Espace pour le titre */
+        }
+        .box {
+            margin: 10px; /* Espace entre chaque carré */
+            width: 400px; /* Largeur des carrés */
+            height: 400px; /* Hauteur des carrés */
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Pour cacher le débordement des images */
+        }
+        img {
+            width: 100%; /* Largeur de l'image à 100% de la boîte parente */
+            height: auto; /* Hauteur automatique pour conserver les proportions */
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokémon Pokédex API</h1>
+    <div class="container">
+        <div class="box">
+            <a href="IMG/AP/exemple.png" target="_blank"> <!-- Lien vers l'image en grand format -->
+                <img src="IMG/AP/exemple.png" alt="l'ouverture">
+            </a>
+        </div>
+        <div class="box">
+            <a href="IMG/AP/exemple2.png" target="_blank">
+                <img src="IMG/AP/exemple2.png" alt="">
+            </a>
+        </div>
+    </div>
+    <button onclick="window.location.href = 'index.html';">Retour à la page d'accueil</button>
+</body>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site d'e-commerce img</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Espace pour le titre */
+    }
+    .box {
+        margin: 10px; /* Espace entre chaque carré */
+        width: 400px; /* Largeur des carrés */
+        height: 400px; /* Hauteur des carrés */
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Pour cacher le débordement des images */
+    }
+    img {
+        width: 100%; /* Largeur de l'image à 100% de la boîte parente */
+        height: auto; /* Hauteur automatique pour conserver les proportions */
+    }
+</style>
+</head>
+<body>
+<h1>Site d'e-commerce</h1>
+<div class="container">
+    <div class="box">
+        <a href="IMG/SI/affiche.png" target="_blank">
+            <img src="IMG/SI/affiche.png" alt="l'ouverture">
+        </a>
+    </div>
+</div>
+<button onclick="window.location.href = 'index.html';">Retour à la page d'accueil</button>
+</body>
+</html>

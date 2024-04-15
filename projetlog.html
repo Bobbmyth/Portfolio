@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet log</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Espace pour le titre */
+        }
+        .box {
+            margin: 10px; /* Espace entre chaque carré */
+            width: 400px; /* Largeur des carrés */
+            height: 400px; /* Hauteur des carrés */
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            cursor: pointer; /* Curseur de souris pour indiquer la cliquabilité */
+        }
+    </style>
+</head>
+<body>
+    <h1>Le Projet log</h1>
+    <div class="container">
+        <div class="box">
+            <a href="IMG/PL/All.png" target="_blank"> <!-- Lien vers l'image en grand format -->
+                <img src="IMG/PL/All.png" alt="l'ouverture">
+            </a>
+        </div>
+        <div class="box">
+            <a href="IMG/PL/Error.png" target="_blank">
+                <img src="IMG/PL/Error.png" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <a href="IMG/PL/warning.png" target="_blank">
+                <img src="IMG/PL/warning.png" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <a href="IMG/PL/Fatalerror.png" target="_blank">
+                <img src="IMG/PL/Fatalerror.png" alt="">
+            </a>
+        </div>
+    </div>
+    <h1>Log.txt</h1>
+    <ul>
+        <li>[2024-03-10 12:30:45] [ERROR] Une erreur critique est survenue : Division par zéro</li>
+        <li>[2024-03-10 12:35:20] [INFO] Informations générales : Le serveur a été redémarré</li>
+        <li>[2024-03-10 12:40:15] [ERROR] Erreur dans le traitement des données : Fichier introuvable</li>
+        <li>[2024-03-10 12:45:50] [WARNING] Avertissement : Espace disque faible</li>
+        <li>[2024-03-10 12:50:03] [ERROR] Problème de connexion à la base de données : Timeout</li>
+        <li>[2024-03-10 13:00:21] [FATAL ERROR] Erreur fatale : Crash du serveur</li>
+        <li>[2024-03-10 13:15:42] [ERROR] Erreur lors du chargement des fichiers : Permission refusée</li>
+        <li>[2024-03-10 13:20:11] [ERROR] Problème critique dans le système : Crash du serveur</li>
+        <li>[2024-03-10 13:25:30] [FATAL ERROR] Erreur fatale : Mémoire insuffisante</li>
+        <li>[2024-03-10 13:30:55] [ERROR] Une autre erreur critique s'est produite : Connexion réseau perdue</li>
+        <li>[2024-03-10 13:35:17] [WARNING] Avertissement : Nombre élevé de requêtes simultanées</li>
+        <li>[2024-03-10 13:40:23] [ERROR] Erreur lors du traitement des formulaires : Champ manquant</li>
+        <li>[2024-03-10 13:45:49] [ERROR] Problème de sécurité détecté : Attaque par injection SQL</li>
+        <li>[2024-03-10 14:00:02] [ERROR] Une erreur de configuration s'est produite : Paramètre invalide</li>
+        <li>[2024-03-10 14:10:30] [FATAL ERROR] Erreur fatale : Crash du serveur</li>
+        <li>[2024-03-10 14:15:18] [ERROR] Erreur dans le module d'authentification : Utilisateur non trouvé</li>
+        <li>[2024-03-10 14:20:45] [ERROR] Problème de compatibilité avec le navigateur : Version obsolète</li>
+        <li>[2024-03-10 14:25:56] [ERROR] Erreur lors du chargement des images : Format non pris en charge</li>
+        <li>[2024-03-10 14:30:12] [WARNING] Avertissement : Température du serveur élevée</li>
+        <li>[2024-03-10 14:35:29] [ERROR] Problème avec le service de messagerie : Envoi de message échoué</li>
+        <li>[2024-03-10 14:40:44] [ERROR] Erreur de validation des données : Format incorrect</li>
+        <li>[2024-03-10 14:45:55] [ERROR] Problème de configuration du pare-feu : Accès refusé</li>
+        <li>[2024-03-10 15:00:10] [FATAL ERROR] Erreur fatale : Crash du serveur</li>
+        <li>[2024-03-10 15:10:22] [WARNING] Avertissement : Trop de connexions simultanées</li>
+        <li>[2024-03-10 15:15:38] [ERROR] Erreur lors du téléchargement des fichiers : Taille maximale dépassée</li>
+        <li>[2024-03-10 15:20:49] [ERROR] Problème de sécurité : Attaque par déni de service</li>
+        <li>[2024-03-10 15:25:57] [ERROR] Erreur lors du traitement des paiements : Carte de crédit non valide</li>
+        <li>[2024-03-10 15:30:12] [WARNING] Avertissement : Le serveur est surchargé</li>
+        <li>[2024-03-10 15:35:28] [ERROR] Problème de configuration du serveur de messagerie : Connexion impossible</li>
+        <li>[2024-03-10 15:40:45] [ERROR] Erreur lors de la génération des rapports : Données manquantes</li>
+        <li>[2024-03-10 15:45:56] [ERROR] Problème de compatibilité avec la base de données : Version obsolète</li>
+        <li>[2024-03-10 16:00:11] [FATAL ERROR] Erreur fatale : Crash du serveur</li>
+        <li>[2024-03-10 16:10:22] [WARNING] Avertissement : Connexion réseau instable</li>
+        <li>[2024-03-10 16:15:38] [ERROR] Erreur lors de la mise à jour du logiciel : Fichier manquant</li>
+        <li>[2024-03-10 16:20:49] [ERROR] Problème de sécurité : Tentative d'intrusion détectée</li>
+        <li>[2024-03-10 16:25:57] [ERROR] Erreur lors du traitement des commandes : Commande non reconnue</li>
+        <li>[2024-03-10 16:30:12] [WARNING] Avertissement : Faible espace disque disponible</li>
+        <li>[2024-03-10 16:35:28] [ERROR] Problème de configuration du réseau : Adresse IP invalide</li>
+        <li>[2024-03-10 16:40:45] [ERROR] Erreur lors de l'envoi des notifications : Destinataire introuvable</li>
+        <li>[2024-03-10 16:45:56] [ERROR] Problème de sécurité : Vulnérabilité détectée</li>
+        <li>[2024-03-10 17:00:11] [ERROR] Une erreur de traitement est survenue : Opération non autorisée</li>
+        <li>[2024-03-10 17:10:22] [WARNING] Avertissement : Dégradation des performances</li>
+        <li>[2024-03-10 17:15:38] [ERROR] Erreur lors de la sauvegarde des données : Echec du processus</li>
+        <li>[2024-03-10 17:20:49] [ERROR] Problème de sécurité : Attaque par script malveillant</li>
+        <li>[2024-03-10 17:25:57] [ERROR] Erreur lors de la gestion des utilisateurs : Accès refusé</li>
+    </ul>
+
+    <p>FIN</p>
+    <button onclick="window.location.href='index.html'">Revenir à la page d'accueil</button>
+</body>
+</html>
